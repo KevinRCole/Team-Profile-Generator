@@ -1,5 +1,3 @@
 // constructor function for teamMember
 
-function TeamMember (personName, jobTitle, employeeId, emailAdress, githubId, addAnotherEmployee) {
-    
-} 
+console.log("Hello World!");
