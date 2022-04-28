@@ -1,18 +1,19 @@
 const Employee = require('./Employee');
-const employeeBob = new Employee ("Bob", "Manager", "11", "bob@gamil.com");
 
-describe('testEmployee', () =>{
-  it('should return an object with new empployee properties that were input as parameters'), () => {
-    expect(employeeBob).toEqual(
-    
-   employeeBob   
-  {
-    personName: 'Bob', 
-    personJob: 'Manager',
-    personId: '11',
-    personEmail: 'bob@gmail.com',
-  }
-    );
-}});
+describe("testEmployee", () => {
+  // Test for all use cases when initializing a new Child object
+  describe("Initialization", () => {
+    it("should create an object with a name, job title, employee ID, and gmail address if provided valid arguments", () => {
+      
+      const testEmployee= new Employee("Bob", "Manager", "11", "testEmployee@gmail.com");
 
+      // Verify that the new object has the correct properties
+      expect(testEmployee.personName).toEqual("Bob");
+      expect(testEmployee.personJob).toEqual("Manager");
+      expect(testEmployee.personId).toEqual("11");
+      expect(testEmployee.personEmail).toEqual("testEmployee@gmail.com");
+    });
 
+  });
+
+});
