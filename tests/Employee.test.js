@@ -1,7 +1,7 @@
 const Employee = require('./Employee');
 
 describe("testEmployee", () => {
-  // Test for all use cases when initializing a new Child object
+  // Test for all use cases when initializing a new Employee object
   describe("Initialization", () => {
     it("should create an object with a name, job title, employee ID, and gmail address if provided valid arguments", () => {
       
