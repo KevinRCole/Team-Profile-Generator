@@ -1,3 +1,1 @@
-// constructor function for teamMember
-
-console.log("Hello World!");
+var inquirer = require('inquirer');

@@ -1,35 +1,28 @@
-var inquirer = require('inquirer');
-
-
 class Employee {
-   
-  constructor(personName, personJob, personId, personEmail) {
-      this.personName = personName;
-      this.personId = personId;
-      this.personEmail = personEmail;
+    // Just like constructor functions, classes can accept arguments
+    constructor(name, id, email) {
+      this.name = name;
+      this.id = id;
+      this.email = email;
     }
   
-      //  Method that uses inquirer to prompt user for user's name
     getName() {
-
-      inquirer.prompt([
-        {
-        type: "input",
-        name: "personName",
-        message: "What is your name?",
-        },
-
-      ])
-
-      .then((answers) => {
-        personName=answers.personName;
-       
-      })
-
+        console.log(`${this.name}`);
     }
 
-  }
+    getId() {
+        console.log(`${this.id}`);
+    }
 
-  getName();
- 
+    getEmail() {
+        console.log(`${this.email}`);
+    }
+  }
+  
+  const temp = new Employee("Kevin", "14", "kevin@fakemail.com");
+  
+  console.log(temp);
+
+  console.log(Employee);
+
   module.exports = Employee;
